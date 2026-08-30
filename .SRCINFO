@@ -1,0 +1,25 @@
+pkgbase = synfiles
+	pkgdesc = SynapseOS file browser: tabs, pinned places, recent files and volumes
+	pkgver = 0.1.0
+	pkgrel = 70
+	url = https://github.com/velle999/SYNAPSE
+	arch = x86_64
+	license = GPL-2.0-or-later
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gcc
+	depends = glibc
+	depends = shared-mime-info
+	optdepends = quickshell: the graphical browser (synfiles gui)
+	optdepends = xdg-utils: open files in their default application
+	optdepends = util-linux: the Devices sidebar (lsblk)
+	optdepends = gvfs: network places — SMB, SFTP and MTP shares
+	optdepends = avahi: find network shares announced over mDNS
+	optdepends = smbclient: find Windows shares over NetBIOS, and list what a server offers
+	optdepends = udisks2: mount removable media without root
+	optdepends = ffmpeg: video thumbnails, and the resolution of Matroska/WebM/AVI
+	optdepends = syn-disks: Open in Disks, and Format… for removable media
+	source = synfiles-0.1.0.tar.gz::https://github.com/velle999/SYNAPSE/releases/download/synfiles-0.1.0-70/synfiles-0.1.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = synfiles
