@@ -47,6 +47,11 @@ Removable media mount through udisks2 without root. Network places — SMB,
 SFTP and MTP — come from gvfs when it is installed, and shares announced over
 mDNS or NetBIOS are found with avahi and smbclient.
 
+The devices list keeps itself current. Plug a stick in, put a disc in a drive,
+or mount something from another program or a terminal, and the sidebar changes
+without a refresh. `synfiles volumes --watch` is the same thing on the command
+line: it blocks, and prints a line whenever the list would change.
+
 `ffmpeg` gives video thumbnails and the resolution of Matroska, WebM and AVI
 files; without it those files simply show their icon.
 
@@ -67,4 +72,4 @@ Developed in [the SynapseOS monorepo](https://github.com/velle999/SYNAPSE),
 in `synfiles/`. **This repository is generated from it** — the PKGBUILD, a
 generated `.SRCINFO` and this README — so issues and patches belong there.
 
-synfiles 0.1.0-74 · GPL-2.0-or-later
+synfiles 0.1.0-75 · GPL-2.0-or-later
